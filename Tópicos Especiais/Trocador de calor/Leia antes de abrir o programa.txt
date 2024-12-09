@@ -1,0 +1,57 @@
+Instruções antes de abrir o documento de testes (Ignore caso as Macros e Comandos ActiveX já estejam habilitados):
+
+1- Abrir um arquivo Excel qualquer do teu computador ou um arquivo novo vazio
+
+2- Habilitar os comandos do ActiveX
+	2.1- Clique na aba 'Arquivo', ao lado da aba 'Página Inicial', e clique em 'Opções do Excel'
+	2.2- Selecione a aba 'Central de Confiabilidade' (última opção das abas do canto superior esquerdo)
+	2.3- Selecione a aba 'Configurações do ActiveX', abaixo da habilitação dos Suplementos
+	2.4A- Selecione 'Avisar antes de habilitar todos os controles com restrições mínimas'
+	2.4B- Selecione 'Habilitar todos os controles sem restrições e sem aviso'
+	2.5- Caso apareça alguma mensagem relacionada ao ActiveX na planilha, clique em 'Sim', 'Ok' ou 'Confirmar'
+
+3- Habilitar as Macros
+	3.1- Siga as instruções 2.1 e 2.2 novamente
+	3.2- Selecione a aba 'Configurações de Macro'
+	3.3- No agrupamento 'Configurações de Macro', selecione 'Habilitar todas as macros'
+
+4- (Leitura Opcional) Posterior ao uso da planilha, desabilite, no documento da instrução 1, Macros e ActiveX.
+
+
+
+
+
+
+5- (Leitura Opcional) Informações adicionais
+	5.1- Caso o acesso aos códigos seja cedido pelo desenvolvedor, cuidado para não alterar qualquer variável da planilha que faça parte das linhas dos Módulos e UserForms do Visual Basic
+	5.2- O que são as Macros e os ActiveX?
+		5.2.1- O programa coleta os coeficientes e incógnitas dos teus problemas algébricos, organiza e te devolve resultados ou equações prontas. Essa automatização é feita a partir dos scripts, que são comandos que permitem que isso aconteça através de códigos simples.
+		5.2.2- O ActiveX possibilita a ativação de recursos relacionados à automatização da planilha e fornecimento de opções diferentes de cálculos possíveis. A restrição limita o uso da planilha.
+	5.3- As Macros e os ActiveX modificam itens do sistema operacional ou dados do computador?
+		5.3.1- As Macros e ActiveX são comandos restritos ao Visual Basic, e não são códigos exportáveis, movíveis para áreas de transferência ou exequíveis fora de um arquivo Microsoft Office Excel
+	5.4- Em caso de falhas
+		5.4.1- Para falhas que não permitem o fechamento usual do programa, feche-o com o Gerenciador de Tarefas
+			5.4.1.1- Clique com o botão direito em uma região vazia da barra de tarefas e selecione 'Gerenciador de Tarefas'
+			5.4.1.2- Clique no Excel e, se tiver mais de um documento aberto, selecione o que possui o nome do arquivo '.xlsm' na pasta Planilhas
+			5.4.1.3- Clique em Finalizar Tarefa
+		5.4.2- Para falhas que forneçam resultados incoerentes ou visivelmente equivocados, notifique-me por email: felipebebetinho6@gmail.com
+			5.4.2.1- Endereçar assunto como 'Erro na planilha!'
+			5.4.2.3- Endereçar vocativo como 'Lavoisier'
+			5.4.2.4- Descreva o erro, mandando o máximo de referenciais possíveis. Seja o mais específico possível
+			5.4.2.5- Aguarde o email resposta. Mandarei o arquivo compactado em anexo, possívelmente com notas explicativas do erro em questão.
+		5.4.3- Para falhas na abertura de planilhas posteriores à utilização desta
+			5.4.3.1- Abra a planilha
+			5.4.3.2- Desmarque a caixa de seleção do Salvamento Automático
+			5.4.3.3- Selecione o botão Fechar
+			5.4.3.4- Ctrl+K
+			5.4.3.5- Abra a vossa planilha de utilização posterior
+			5.4.3.6- Feche a planilha sem salvar, sem fechar a de utilização posterior
+	5.5- Não mexa na pasta Content
+		5.5.1- A pasta faz parte do grupo de códigos que geram a tela de carregamento, de encerramento e a tela de inserção. Remover ou renomear pasta e/ou arquivos pode corromper as Macros
+		5.5.2- Para aberturas personalizadas, contate-me por email: felipebebetinho6@gmail.com
+			5.5.2.1- Endereçar assunto como 'Abertura personalizada'
+			5.5.2.2- Endereçar vocativo como 'Lavoisier'
+			5.5.2.3- Mande a(s) imagem(ns) em .jpeg para serem colocadas de abertura
+			5.5.2.4- Mande as frases aleatórias que quiser que apareçam
+			5.5.2.5- Aguarde o email resposta. Mandarei o arquivo compactado em anexo
+		
