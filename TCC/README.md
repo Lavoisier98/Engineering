@@ -30,11 +30,59 @@ A tabela de dados da Sheet Equipamentos refere-se aos cálculos utilizados nos r
 
 
 
+2. COLUNA CL-01.XLSM E COLUNA CL-02.XLSM
+
+Planilha de apoio utilizada no cálculo de dimensionamento das colunas de destilação CL-01 e CL-02 utilizadas no processo, através do método de FUGK (Fenske: Número mínimo de estágios teóricos; Underwood: Rmín do refluxo;  Gilliland: Número real de estágios teóricos; Kirkbride: Posição do prato de alimentação).
+
+2.1 INSERÇÃO DE DADOS
+
+Aqui, o usuário precisa preencher o percentual mássico de cada componente, separado por Resíduo (fundo da coluna), Feed (entrada de alimentação da coluna) e destilado (topo da coluna). Além disso, é necessário preencher o restante das células brancas, como as da coluna N, a pressão na coluna L e o q na coluna M. Não é necessário preencher todos os valores de F, D e B na coluna N, exceto caso já tenha um valor a ser obedecido.
+
+2.2 SOLVER
+
+O solver inicialmente modificará o valor da temperatura de fundo da coluna (célula O2) até que os valores da pressão interna do fundo (obtidos em função dos valores de pressão e parâmetros de Antoine) equivalham à pressão fornecida na célula L2 (a pressão precisa ser absoluta e seguir a unidade especificada). Após achar o valor, repetirá o procedimento para achar a temperatura da alimentação e do topo. Em seguida, alterará o parâmetro teta de Underwood até que a soma dos parâmetros teta individualizados nos elementos esteja menor que dois. Com o parâmetro definido, continua-se o roteiro de cálculo segundo método de FUGK.
 
 
 
+3. COMPRESSOR-C-01.XLSM
+
+O compressor segue o roteiro de cálculo da apostila 2 de operações unitárias, a fim de obter os dados técnicos do equipamento como head politrópico, rotação, diâmetro específico, velocidade específica e parâmetros mais básicos como temperatura de saída e BHP
+
+3.1 INSERÇÃO DE DADOS
+
+A planilha tem adaptação a vários casos, pois foi feita para ser utilizada em todo exercício de compressor que pudesse ter em provas. As células a serem preenchidas pelo usuário equivalem às brancas que estão entre as colunas B e G e estão entre as linhas 2 e 28. Não altere as células em azul claro, pois são todas calculadas. Caso haja uma mistura com um único valor, aplicar no composto Z[Restante] ao invés de aplicar nas células brancas a partir da linha 5. As células laranjas da linha G também podem ser preenchidas.
+
+3.2 CONDIÇÕES DE PROCESSO
+
+Nas colunas H e I, linhas de 3 a 19, são calculadas as condições de operação recomendadas para esse compressor, como a temperatura de saída.
+
+3.4 TABELA DE VISCOSIDADE DINÂMICA E DIÂMETRO TABELADOS
+
+No cálculo manual, faz-se uso da vazão para determinar valores mínimos e máximos de viscosidade dinâmica e diâmetro. A célula B39 recebe a vasão das condições de operação e utiliza para te fornecer os resultados para o usuário obtenha os valores de velocidade específica e diâmetro específico.
+
+3.5 DIMENSIONAMENTO DO COMPRESSOR
+
+A partir da linha 20 das colunas H e I, todas as células em azul clara são destinadas aos cálculos básicos de dimensionamento do compressor.
 
 
 
+4. TROCADOR DE CALOR TC/CS
 
+Através do método Kern, estima-se os coeficientes de película dos trocadores, área de troca térmica e perda de carga de casco e tubo.
+
+4.1 INSERÇÃO DE DADOS
+
+Os dados entre as colunas K e S determinam as condições de operação que serão utilizadas na obtenção dos parâmetros e propriedades técnicas dos trocadores que devem ser adotadas. Não é necessário que todos os dados estejam preenchidos na linha 6, porém quanto mais dados já tiverem sido pré-estabelecidos, menos margem de erro o cálculo terá. É possível fazer tentativa e erro com os valores desconhecidos para estudos de caso a partir dos resultados obtidos (para este projeto, alguns dos parâmetros adotados vieram de bons números obtidos através de estudos de tentativa e erro).
+
+4.2 HOMOGENEIZAÇÃO DOS DADOS
+
+A planilha utiliza as linhas 6 e 7 até a coluna I para calcular os dados que o usuário não preencheu através do balanço de energia (Q=m.Cp.dT).
+
+4.3 DIMENSIONAMENTO DO TROCADOR
+
+Aqui, estabelece-se as propriedades do trocador ideal às condições operacionais, calculando área de troca térmica, número de tubos, número de passes, diâmetro de casco, Uc e Rd.
+
+4.4 RATING DO TROCADOR
+
+As propriedades que podem afetar o processo, como as perdas de carga, Reynolds, Prandt e coeficientes de película.
 
